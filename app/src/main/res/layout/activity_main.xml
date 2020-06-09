@@ -8,7 +8,8 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffc77d">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,29 +17,33 @@
         android:text="Team A"
         android:padding="4dp"/>
     <TextView
+        android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="3"
+        android:text="0"
         android:padding="4dp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+3 Points"
         android:textAllCaps="true"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="addThreeForTeamA"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+2 Points"
         android:textAllCaps="true"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="addTwoForTeamA"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Free Throw"
         android:textAllCaps="true"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+        android:onClick="addOneForTeamA"/>
 
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
